@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from mysite.views import home, hello
+from mysite import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -7,8 +7,8 @@ from mysite.views import home, hello
 
 urlpatterns = patterns('',
 	
-	url(r'^$', home),
-	url(r'^hello/$', hello), 
+	url(r'^$', views.home),
+	url(r'^hello/$', views.hello), 
 	
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
