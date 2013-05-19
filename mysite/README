@@ -1,9 +1,13 @@
-To launch the web-page, enter:
+To launch the web-page, move to the 'mysite' directory by entering the 
+following into the command line:
 
-	'python manage.py runserver' 
+	$ cd Project/mysite
 
-into the command line, then enter: 
+then, enter the following:
 
-	127.0.0.1:8000 
+	$ python manage.py runserver 
 
-into the url bar of an internet browser.
+
+Once that is done, open up an internet browser and go to:
+
+	127.0.0.1:8000

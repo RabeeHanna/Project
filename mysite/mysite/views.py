@@ -1,11 +1,11 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+from django.http import HttpResponse
 import datetime
 
 def home(request):
-	now = datetime.datetime.now() + datetime.timedelta(hours = 1)
+	now = datetime.datetime.now()
 	return render(request, 'home.html', {'current_date': now})
 
 def hello(request):
-	return HttpResponse("Page under construction")
+	return render(request, 'hello.html')
 
