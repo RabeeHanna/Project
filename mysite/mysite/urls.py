@@ -8,7 +8,8 @@ from mysite import views
 urlpatterns = patterns('',
 	
 	url(r'^$', views.home),
-	url(r'^hello/$', views.hello), 
+	url(r'^selection/$', views.selection),
+		url(r'^selection/weather.asp$', views.weather), 
 	
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
