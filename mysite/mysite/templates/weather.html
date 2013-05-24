@@ -1,12 +1,12 @@
-<html>
-	<body style="background-color:black;">
-		<h1 style="text-align: center;">
-			<span style="color:#ffffff;">Hello!</span></h1>
+{% extends "base.html" %}
 
-		<div style=' width: 630px; height: 440px; background-image: url( http://vortex.accuweather.com/adcbin/netweather_v2/backgrounds/blue_630x440_bg.jpg ); background-repeat: no-repeat; background-color: #346797;' ><div id='NetweatherContainer' style='height: 420px;' ><script src='http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&tStyle=whteYell&logo=1&zipcode=NAM|CA|{{ province }}|{{ city }}|&lang=eng&size=14&theme=blue&metric=1&target=_self'></script></div><div style='text-align: center; font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; line-height: 20px; color: #FFFFFF;' ></div></div>
+{% block title %}Rabee's Website - Weather for (city, province){% endblock %}
 
-		<p>
-			<span style="color:#ffffff;">Click </span><a href="/"><span style="color:#800080;">here</span></a><span style="color:#ffffff;"> to return.</span></p>
+{% block content %}
+		<div align="center"><div align="center" style='width: 630px; height: 440px; background-image: url( http://vortex.accuweather.com/adcbin/netweather_v2/backgrounds/blue_630x440_bg.jpg ); background-repeat: no-repeat; background-color: #346797;'><div align="center" id='NetweatherContainer' style='height: 420px;'><script src='http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&tStyle=whteYell&logo=1&zipcode=NAM|CA|{{ province }}|{{ city }}|&lang=eng&size=14&theme=blue&metric=1&target=_self'></script></div><div style='text-align: center; font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; line-height: 20px; color: #FFFFFF;' ></div></div></div>
+		<p style="text-align: center;"><a href="/"><span style="color:#800080;">Home</span></a></p>
+		<p>&nbsp;</p>
+		<h4 style="text-align: center;"><span style="color:#ffffff;">Weather courtesy of AccuWeather.com</span></h4>
+{% endblock %}
 
-	</body>
-</html>
+{% block footer %}{% include "footer.html" %}{% endblock %}

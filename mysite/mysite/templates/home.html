@@ -1,15 +1,10 @@
-<html>
-	<body style="background-color:black;">
-		
-		<p style="text-align: center;">
-			<strong><span style="font-size:48px;color:#ffffff;">Hello world!</span></strong></p>
+{% extends "base.html" %}
 
-		<p style="text-align: center;">
-		<span style="color:#ffffff;">Welcome to my Django-powered webpage. The date is {{ current_date }} EST.</span></p>
+{% block title %}Rabee's Website - Home{% endblock %}
 
-		<p style="text-align: center;">
-		<a href="/selection">Click here to go to the weather selection Page.</a></p>
-	
-	</body>
-			
-</html>
+{% block content %}
+	<p style="text-align: center;"><span style="color:#ffffff;">Welcome to my Django-powered webpage. The date is {{ current_date }} EST.</span></p>
+	<p style="text-align: center;"><a href="/selection">Click here to go to the weather selection Page.</a></p>
+{% endblock %}
+
+{% block footer %}{% include "footer.html" %}{% endblock %}
