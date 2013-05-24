@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Location selector{% endblock %}
+
+{% block content %}
+<script>
+function disp_prompt()
+  {
+  var prov=prompt("Please enter your province:","Province")
+  var city=prompt("Please enter your city:","City")
+  document.getElementById("provid").innerHTML=prov
+  document.getElementById("cityid").innerHTML=city
+  }
+</script>
+
+<div align="center">
+<input type="button" onclick="disp_prompt()" value="Enter Details">
+<br><br>
+
+<p id="provid"></p>
+<p id="cityid"></p>
+</div>
+{% endblock %}

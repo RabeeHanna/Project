@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Rabee's Website - Weather for (city, province){% endblock %}
+{% block title %}Weather for (city, province){% endblock %}
 
 {% block content %}
 		<div align="center"><div align="center" style='width: 630px; height: 440px; background-image: url( http://vortex.accuweather.com/adcbin/netweather_v2/backgrounds/blue_630x440_bg.jpg ); background-repeat: no-repeat; background-color: #346797;'><div align="center" id='NetweatherContainer' style='height: 420px;'><script src='http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&tStyle=whteYell&logo=1&zipcode=NAM|CA|{{ province }}|{{ city }}|&lang=eng&size=14&theme=blue&metric=1&target=_self'></script></div><div style='text-align: center; font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; line-height: 20px; color: #FFFFFF;' ></div></div></div>
@@ -8,5 +8,3 @@
 		<p>&nbsp;</p>
 		<h4 style="text-align: center;"><span style="color:#ffffff;">Weather courtesy of AccuWeather.com</span></h4>
 {% endblock %}
-
-{% block footer %}{% include "footer.html" %}{% endblock %}
