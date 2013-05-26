@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %} - My site</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+
+	    <link href="css/bootstrap.css" rel="stylesheet">
+	    <style type="text/css">
+	      body {
+	        padding-top: 60px;
+	        padding-bottom: 40px;
+	      }
+	    </style>
+ 	    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+ 	    <script src="js/html5shiv.js"></script>
+
+	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+	    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+	    <link rel="shortcut icon" href="ico/favicon.png">
+	
+	
+            </style>
+	    </head>
+	
+ 	    <script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+	    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>
+	
+	<body>
+
+	  <div class="container">
+		<h1 style="text-align: center;">Rabee's Site</h1>
+		
+		{% block content%}{% endblock %}
+	  </div>	
+
+	</body>	
+
+	<footer>	
+		<h5 style="text-align: center;">Site made by Rabee Hanna - 2013</h5>
+	</footer>
+
+</html>
+
+
